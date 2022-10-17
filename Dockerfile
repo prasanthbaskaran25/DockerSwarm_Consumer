@@ -1,3 +1,4 @@
 FROM openjdk:8
-ADD target/consumer-0.0.1-SNAPSHOT.war consumer-0.0.1-SNAPSHOT.war
-ENTRYPOINT [ "java","-jar","/consumer-0.0.1-SNAPSHOT.war" ]
+EXPOSE 8088
+ADD target/Dockerswarm_Consumer-0.0.1-SNAPSHOT.war Dockerswarm_Consumer-0.0.1-SNAPSHOT.war
+ENTRYPOINT [ "java","-jar","/Dockerswarm_Consumer-0.0.1-SNAPSHOT.war" ]
